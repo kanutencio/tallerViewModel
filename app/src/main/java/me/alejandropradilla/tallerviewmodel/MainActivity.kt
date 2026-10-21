@@ -49,7 +49,5 @@ fun Pantalla(vm: ContadorViewModel) {
 
         Text("Sin ViewModel: ${contadorLocal.intValue}", fontSize = 24.sp)
         Button(onClick = { contadorLocal.intValue++ }) { Text("Sumar") }
-
-        Text("Gira el teléfono: solo se conserva el del ViewModel")
     }
 }
