@@ -1,0 +1,10 @@
+COMENTARIOS DE MainActivity.kt
+
+1. VIEWMODEL (ContadorViewModel): guarda el ESTADO y sobrevive cuando se gira el teléfono.
+   - val contador = mutableIntStateOf(0)  -> ESTADO
+   - fun sumar()                          -> EVENTO que cambia el estado
+
+2. ACTIVITY (MainActivity): crea el ViewModel y muestra la vista.
+
+3. VISTA (Pantalla): lee el estado y avisa al ViewModel cuando se toca el botón.
+   - contadorLocal (remember): estado SIN ViewModel, se pierde al girar el teléfono.
